@@ -1,0 +1,100 @@
+/* CSS Document */
+
+img.header {
+	width: 100%;
+	position:fixed;
+	top:0px;
+	z-index:-1;
+}
+div.headerSpace {
+	height:800px;
+    max-height:calc(100vh - 200px);
+	width:100%;	
+}
+div.header {
+	width:100%;
+	position: absolute;
+	background: linear-gradient(to bottom, rgba(66, 66, 66, 1) 0%,rgba(66, 66, 66, 1) 100%);
+	z-index:10000;
+	height:100px;
+	color:white;
+	font-family: 'Roboto', sans-serif;
+	position:fixed;
+	top:0px;
+}
+div.header img {
+	height:80px;
+	margin-top:10px;
+}
+div.header h1{
+	margin-top:30px;
+	margin-bottom:10px;
+	font-size:30px;
+	font-weight:300;
+}
+div.header h2{
+	font-weight:400;
+}
+div.header h2{
+	margin-top:38px;
+	font-size:20px;
+}
+div.header h3 {
+	padding-left:20px;
+	padding-right:20px;
+	margin-top:0px;
+	padding-top:38px;
+	padding-bottom:38px;
+	transition:background-color .5s;
+	background-color:rgba(33,150,243, 0);
+	cursor:pointer;
+}
+div.header h3:hover {
+	background-color:#424242;
+}
+
+div.section.s1 {
+	background:url(img/White-Geometric-Triangle-Wallpaper-1.png);
+    max-height: 550px;
+    position:relative;
+
+}
+div.card.body {
+    margin-left:1%;
+	margin-right:1%;
+	position:relative;
+	top:-600px;
+	letter-spacing: -0.01em;
+    margin-top:100px;
+    width:calc(100% - 10px);
+    max-width:1200px;
+    padding:0px;
+}
+
+.s2 {
+	background:url(img/sample/big_slider5.jpg);
+	min-height:1000px;
+    background-size: cover;
+    
+}
+
+
+div.card.achive, div.card.event {
+	width:40%;
+	margin:5%;
+	float:left;
+    position:relative;
+	margin-top: calc(5% - 35px);
+}
+
+
+
+
+
+
+footer {
+	width:100%;
+	height:50px;
+	background-color:#424242;
+	
+}
