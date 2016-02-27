@@ -64,6 +64,11 @@
     version    : 'v2.5' // use graph api version 2.5
   });
 
+
+}, function(response){
+  // Debug response (optional)
+  console.log(response);
+});  
   // Now that we've initialized the JavaScript SDK, we call 
   // FB.getLoginStatus().  This function gets the state of the
   // person visiting this page and can return one of three states to
@@ -109,7 +114,7 @@
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();" data-auto-logout-link="true" >
 </fb:login-button>
 
 <div id="status">
@@ -117,3 +122,27 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+      
+    FB.ui({
+  method: 'share_open_graph',
+  action_type: 'og.likes',
+  action_properties: JSON.stringify({
+    object:'https://developers.facebook.com/docs/',
+  })
+
+-->
