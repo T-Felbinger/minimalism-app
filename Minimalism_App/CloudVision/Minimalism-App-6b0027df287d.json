@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "minimalism-app",
+  "private_key_id": "6b0027df287d359f966bc5f16ab21a1a93784334",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCQIS4b6DKy3HjO\ng0wmpKp4tSslXttOcPaF5BcplGLNvbWz/PWCQEpFAt8DQJdlghmU9WvKs4cFDMQK\nVt2hUq2bqoBZHxBignSS3aiW0IdA3RfJpnJlokpBIIqjRYHfHjYqQSvv3dSkDQFp\nbQJj6oClY/2fkpyWHoI/iFIowAxcZ+OP8E4aquh92rN9VMW0um4a6gkVZuy4i2lB\ntxl70EuXRGL8h3nmojMkqBGHFX4auyyl8qmFESLEA9XUW9BDLVEfZopv8kH2rPZI\nLO0GPS+FLL2rLCsf8djv7QrKfMqkcmD2qyHR7z4Le85+WluqGbEV/MkD7b1NivK8\nTiPHooXbAgMBAAECggEAf7OWWg2jFgz4UOnOiBKwJGFJCESChX7bPoh46VNbM7Xa\nD86abLyv0XOYyxXozny2U+AbkK7+e7/y1sJefrh1sA4iyFQYvV+fEB2raWz72cHL\neNSsWVaw+gFuNPm590mablfuKQpghLYtQQ7f5k15jJEKv980NGJ1vvr26Lo4eYoR\nnSEX6kdCjGVtndmIfglmOLZtPia/KijW3e/EufdDkexiQLGdKzMlgFjALiP7eEQp\nnaenB5wXl9/ii6XDcvhO4iVGdo3VnCCLPZ/gv07elr/Jp1Jd4fUyb8R3C4xCd+jQ\n/4gJebME50wNV0wWvcYR7+wTXtuJlzqdVZR3R1JiWQKBgQDPOLq5pkb4ox/nQaaz\n7HHBYZzN7HW+KCTq5V0cDJyfHiMz7apruD0rZJcmVxUwgBkSkukjNJCX7TZ9/C6a\nYK9ESPN3Fobk6mDMg1pSQOBv9RpXuWW9ylKJXRYCRZo4qxer/CgjykDbW923Se+b\njMeziDa+eAxn1Q/vdJf2ZMkpjQKBgQCyDn918L3M3BMONUYBRzBVR/tkgI5nUDJK\nQVvREP8tTaoZggu42ycQGkIXTSseJK4YEtiw3bd3DG6N4knuyErkaY3Nh4q56t/d\nwNdR+4QcEDsrCO8VTfSJwD7gauB0Nu3sNG7blOKhXhVO0sjQdmzjopUlvVQfCHRc\nrKrWt2evBwKBgGkJBUTC7qhq7unmUhxTFhoCY1vRpqDbclMKLZbhIaZZvVg9+Ksf\nOQo8s4zAiUILPCo5AylQJJaNq5hSckDYDx7ap2XOqlNwJd6kGe0la130bATZOaPo\n4Ms1vskqBJEC0D3h02rIwvUtbIXSWTyMMFFlEvKaoRckXS5v9/LxhTGlAoGAS+56\n1KTxi+deCPUXAXyGVBf6UQWxtMUybRAqQ6Hn8D3qiC45KX/rzKYmASHbfWNPCt0e\no24pyw72JnOV68pmhbmtyzQ+KMLM7RhLup5z3DPfx55rtr4jxorBRZrOVUEHfW9u\nxx1a+E3S8GZbVOrrzLeMuydeNE26sbrAsAhOowkCgYB87iR0q+cvz/8eO/uVR2FW\nqXv0hXLjg2yhwpjCWputwqOsjRcHvCxdM1unlaF5J036+oRLERyJkN55OJPk+wR2\npmrUpp9VzTLbKpDN+8pNi99vqM64fsxxIGRls/3S4JDG6ERMayDuI537lBqHkA2j\n/iQ8SxkEtObyW775ktGAFg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "imagerec@minimalism-app.iam.gserviceaccount.com",
+  "client_id": "116202657304207037059",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/imagerec%40minimalism-app.iam.gserviceaccount.com"
+}

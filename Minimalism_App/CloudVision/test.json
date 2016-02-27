@@ -1,0 +1,15 @@
+{
+  "requests":[
+    {
+      "image":{
+        "content":"test_closet.jpg"
+      },
+      "features":[
+        {
+          "type":"LABEL_DETECTION",
+          "maxResults":1
+        }
+      ]
+    }
+  ]
+}
