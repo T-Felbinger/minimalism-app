@@ -1,16 +1,21 @@
-$(document).ready(function(){
+document.onload = function() {
+    $("##header__icon").on("touchend", headericoClick(Event));
+    $("#site-cache").on("touchend", sitecacheClick());
+};
 
-	(function($) {
-
-		$('#header__icon').click(function(e){
-			e.preventDefault();
-			$('body').toggleClass('with--sidebar');
-		});
     
-    $('#site-cache').click(function(e){
-      $('body').removeClass('with--sidebar');
-    });
 
-	})(jQuery);
+//    document.getElementById("header__icon").addEventListener("click", headericoClick, false);
+//    document.getElementById("site-cache").addEventListener("click", sitecachClick, false);
 
-});
+
+
+function headericoClick(e) {
+    e.preventDefault();
+    $('body').toggleClass('with--sidebar');
+}
+
+function sitecacheClick() {
+    $('body').removeClass('with--sidebar');
+    
+}
