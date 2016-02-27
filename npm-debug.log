@@ -1,0 +1,305 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'bower',
+1 verbose cli   'Polymer/webcomponentsjs' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'bower', null ]
+7 verbose cache add spec bower
+8 silly cache add args [ 'Polymer/webcomponentsjs', null ]
+9 verbose cache add spec Polymer/webcomponentsjs
+10 silly cache add parsed spec Result {
+10 silly cache add   raw: 'bower',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'bower',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: 'latest',
+10 silly cache add   type: 'tag' }
+11 silly addNamed bower@latest
+12 verbose addNamed "latest" is being treated as a dist-tag for bower
+13 info addNameTag [ 'bower', 'latest' ]
+14 silly mapToRegistry name bower
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/bower
+18 verbose addNameTag registry:https://registry.npmjs.org/bower not in flight; fetching
+19 silly cache add parsed spec Result {
+19 silly cache add   raw: 'Polymer/webcomponentsjs',
+19 silly cache add   scope: null,
+19 silly cache add   name: null,
+19 silly cache add   rawSpec: 'Polymer/webcomponentsjs',
+19 silly cache add   spec: 'github:polymer/webcomponentsjs',
+19 silly cache add   type: 'hosted',
+19 silly cache add   hosted:
+19 silly cache add    { type: 'github',
+19 silly cache add      ssh: 'git@github.com:polymer/webcomponentsjs.git',
+19 silly cache add      sshUrl: 'git+ssh://git@github.com/polymer/webcomponentsjs.git',
+19 silly cache add      httpsUrl: 'git+https://github.com/polymer/webcomponentsjs.git',
+19 silly cache add      gitUrl: 'git://github.com/polymer/webcomponentsjs.git',
+19 silly cache add      shortcut: 'github:polymer/webcomponentsjs',
+19 silly cache add      directUrl: 'https://raw.githubusercontent.com/polymer/webcomponentsjs/master/package.json' } }
+20 verbose addRemoteGit caching Polymer/webcomponentsjs
+21 verbose addRemoteGit polymer/webcomponentsjs is a repository hosted by github
+22 silly tryGitProto attempting to clone git://github.com/polymer/webcomponentsjs.git
+23 silly tryClone cloning polymer/webcomponentsjs via git://github.com/polymer/webcomponentsjs.git
+24 verbose tryClone git-github-com-polymer-webcomponentsjs-git-2c79bf2b not in flight; caching
+25 verbose makeDirectory /Users/Tim_Felbinger/.npm/_git-remotes creation not in flight; initializing
+26 silly makeDirectory /Users/Tim_Felbinger/.npm/_git-remotes uid: 501 gid: 20
+27 verbose request uri https://registry.npmjs.org/bower
+28 verbose request no auth needed
+29 info attempt registry request try #1 at 9:32:17 PM
+30 verbose request id 3820dd5ec734d913
+31 verbose etag "ORY6MZ83PKGOE5M48YDC1HFJ"
+32 http request GET https://registry.npmjs.org/bower
+33 info git [ 'clone',
+33 info git   '--template=/Users/Tim_Felbinger/.npm/_git-remotes/_templates',
+33 info git   '--mirror',
+33 info git   'git://github.com/polymer/webcomponentsjs.git',
+33 info git   '/Users/Tim_Felbinger/.npm/_git-remotes/git-github-com-polymer-webcomponentsjs-git-2c79bf2b' ]
+34 http 200 https://registry.npmjs.org/bower
+35 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+35 verbose headers   etag: '"EZI5J3452IRFZCLBM1I52DWF7"',
+35 verbose headers   'content-type': 'application/json',
+35 verbose headers   'cache-control': 'max-age=300',
+35 verbose headers   'content-length': '169177',
+35 verbose headers   'accept-ranges': 'bytes',
+35 verbose headers   date: 'Sat, 27 Feb 2016 02:32:17 GMT',
+35 verbose headers   via: '1.1 varnish',
+35 verbose headers   age: '209',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'x-served-by': 'cache-jfk1041-JFK',
+35 verbose headers   'x-cache': 'HIT',
+35 verbose headers   'x-cache-hits': '2',
+35 verbose headers   'x-timer': 'S1456540337.459498,VS0,VE0',
+35 verbose headers   vary: 'Accept' }
+36 silly get cb [ 200,
+36 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+36 silly get     etag: '"EZI5J3452IRFZCLBM1I52DWF7"',
+36 silly get     'content-type': 'application/json',
+36 silly get     'cache-control': 'max-age=300',
+36 silly get     'content-length': '169177',
+36 silly get     'accept-ranges': 'bytes',
+36 silly get     date: 'Sat, 27 Feb 2016 02:32:17 GMT',
+36 silly get     via: '1.1 varnish',
+36 silly get     age: '209',
+36 silly get     connection: 'keep-alive',
+36 silly get     'x-served-by': 'cache-jfk1041-JFK',
+36 silly get     'x-cache': 'HIT',
+36 silly get     'x-cache-hits': '2',
+36 silly get     'x-timer': 'S1456540337.459498,VS0,VE0',
+36 silly get     vary: 'Accept' } ]
+37 verbose get saving bower to /Users/Tim_Felbinger/.npm/registry.npmjs.org/bower/.cache.json
+38 silly addNameTag next cb for bower with tag latest
+39 silly addNamed bower@1.7.7
+40 verbose addNamed "1.7.7" is a plain semver version for bower
+41 silly mapToRegistry name bower
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/bower
+45 verbose addRemoteTarball https://registry.npmjs.org/bower/-/bower-1.7.7.tgz not in flight; adding
+46 verbose addRemoteTarball [ 'https://registry.npmjs.org/bower/-/bower-1.7.7.tgz',
+46 verbose addRemoteTarball   '2fd7ff3ebdcba5a8ffcd84c397c8fdfe9f825f92' ]
+47 info retry fetch attempt 1 at 9:32:17 PM
+48 info attempt registry request try #1 at 9:32:17 PM
+49 http fetch GET https://registry.npmjs.org/bower/-/bower-1.7.7.tgz
+50 http fetch 200 https://registry.npmjs.org/bower/-/bower-1.7.7.tgz
+51 silly fetchAndShaCheck shasum 2fd7ff3ebdcba5a8ffcd84c397c8fdfe9f825f92
+52 verbose addTmpTarball /var/folders/3c/shxq38w92rn1186pstgyn12r0000gn/T/npm-7332-94d11362/registry.npmjs.org/bower/-/bower-1.7.7.tgz not in flight; adding
+53 verbose addTmpTarball already have metadata; skipping unpack for bower@1.7.7
+54 silly cache afterAdd bower@1.7.7
+55 verbose afterAdd /Users/Tim_Felbinger/.npm/bower/1.7.7/package/package.json not in flight; writing
+56 verbose afterAdd /Users/Tim_Felbinger/.npm/bower/1.7.7/package/package.json written
+57 verbose mirrorRemote polymer/webcomponentsjs git clone git://github.com/polymer/webcomponentsjs.git
+58 verbose setPermissions polymer/webcomponentsjs set permissions on /Users/Tim_Felbinger/.npm/_git-remotes/git-github-com-polymer-webcomponentsjs-git-2c79bf2b
+59 verbose resolveHead polymer/webcomponentsjs original treeish: master
+60 info git [ 'rev-list', '-n1', 'master' ]
+61 silly resolveHead polymer/webcomponentsjs resolved treeish: b76bfaa6b1b2d691745b8d38b3f242e8f17490d5
+62 verbose resolveHead polymer/webcomponentsjs resolved Git URL: git://github.com/polymer/webcomponentsjs.git#b76bfaa6b1b2d691745b8d38b3f242e8f17490d5
+63 silly resolveHead Git working directory: /var/folders/3c/shxq38w92rn1186pstgyn12r0000gn/T/npm-7332-94d11362/git-cache-95233fc7895d/b76bfaa6b1b2d691745b8d38b3f242e8f17490d5
+64 info git [ 'clone',
+64 info git   '/Users/Tim_Felbinger/.npm/_git-remotes/git-github-com-polymer-webcomponentsjs-git-2c79bf2b',
+64 info git   '/var/folders/3c/shxq38w92rn1186pstgyn12r0000gn/T/npm-7332-94d11362/git-cache-95233fc7895d/b76bfaa6b1b2d691745b8d38b3f242e8f17490d5' ]
+65 verbose cloneResolved polymer/webcomponentsjs clone Cloning into '/var/folders/3c/shxq38w92rn1186pstgyn12r0000gn/T/npm-7332-94d11362/git-cache-95233fc7895d/b76bfaa6b1b2d691745b8d38b3f242e8f17490d5'...
+65 verbose cloneResolved done.
+66 info git [ 'checkout', 'b76bfaa6b1b2d691745b8d38b3f242e8f17490d5' ]
+67 verbose checkoutTreeish polymer/webcomponentsjs checkout Note: checking out 'b76bfaa6b1b2d691745b8d38b3f242e8f17490d5'.
+67 verbose checkoutTreeish
+67 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+67 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+67 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+67 verbose checkoutTreeish
+67 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+67 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+67 verbose checkoutTreeish
+67 verbose checkoutTreeish   git checkout -b <new-branch-name>
+67 verbose checkoutTreeish
+67 verbose checkoutTreeish HEAD is now at b76bfaa... prepare for release v0.7.21
+68 verbose addLocalDirectory /Users/Tim_Felbinger/.npm/webcomponents.js/0.7.21/package.tgz not in flight; packing
+69 verbose tar pack [ '/Users/Tim_Felbinger/.npm/webcomponents.js/0.7.21/package.tgz',
+69 verbose tar pack   '/var/folders/3c/shxq38w92rn1186pstgyn12r0000gn/T/npm-7332-94d11362/git-cache-95233fc7895d/b76bfaa6b1b2d691745b8d38b3f242e8f17490d5' ]
+70 verbose tarball /Users/Tim_Felbinger/.npm/webcomponents.js/0.7.21/package.tgz
+71 verbose folder /var/folders/3c/shxq38w92rn1186pstgyn12r0000gn/T/npm-7332-94d11362/git-cache-95233fc7895d/b76bfaa6b1b2d691745b8d38b3f242e8f17490d5
+72 verbose addLocalTarball adding from inside cache /Users/Tim_Felbinger/.npm/webcomponents.js/0.7.21/package.tgz
+73 verbose addRemoteGit data._from: polymer/webcomponentsjs
+74 verbose addRemoteGit data._resolved: git://github.com/polymer/webcomponentsjs.git#b76bfaa6b1b2d691745b8d38b3f242e8f17490d5
+75 silly cache afterAdd webcomponents.js@0.7.21
+76 verbose afterAdd /Users/Tim_Felbinger/.npm/webcomponents.js/0.7.21/package/package.json not in flight; writing
+77 verbose afterAdd /Users/Tim_Felbinger/.npm/webcomponents.js/0.7.21/package/package.json written
+78 silly install resolved [ { name: 'bower',
+78 silly install resolved     version: '1.7.7',
+78 silly install resolved     description: 'The browser package manager',
+78 silly install resolved     author: { name: 'Twitter' },
+78 silly install resolved     license: 'MIT',
+78 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/bower/bower.git' },
+78 silly install resolved     main: 'lib',
+78 silly install resolved     bin: { bower: 'bin/bower' },
+78 silly install resolved     homepage: 'http://bower.io',
+78 silly install resolved     engines: { node: '>=0.10.0' },
+78 silly install resolved     keywords: [ 'bower' ],
+78 silly install resolved     files: [ 'bin', 'lib' ],
+78 silly install resolved     bugs: { url: 'https://github.com/bower/bower/issues' },
+78 silly install resolved     _id: 'bower@1.7.7',
+78 silly install resolved     scripts: {},
+78 silly install resolved     _shasum: '2fd7ff3ebdcba5a8ffcd84c397c8fdfe9f825f92',
+78 silly install resolved     _from: 'bower@latest',
+78 silly install resolved     _npmVersion: '3.5.3',
+78 silly install resolved     _nodeVersion: '4.1.1',
+78 silly install resolved     _npmUser: { name: 'sheerun', email: 'sheerun@sher.pl' },
+78 silly install resolved     dist:
+78 silly install resolved      { shasum: '2fd7ff3ebdcba5a8ffcd84c397c8fdfe9f825f92',
+78 silly install resolved        tarball: 'http://registry.npmjs.org/bower/-/bower-1.7.7.tgz' },
+78 silly install resolved     maintainers:
+78 silly install resolved      [ [Object],
+78 silly install resolved        [Object],
+78 silly install resolved        [Object],
+78 silly install resolved        [Object],
+78 silly install resolved        [Object],
+78 silly install resolved        [Object],
+78 silly install resolved        [Object] ],
+78 silly install resolved     directories: {},
+78 silly install resolved     _resolved: 'https://registry.npmjs.org/bower/-/bower-1.7.7.tgz' },
+78 silly install resolved   { name: 'webcomponents.js',
+78 silly install resolved     version: '0.7.21',
+78 silly install resolved     description: 'webcomponents.js',
+78 silly install resolved     main: 'webcomponents.js',
+78 silly install resolved     directories: { test: 'tests' },
+78 silly install resolved     repository:
+78 silly install resolved      { type: 'git',
+78 silly install resolved        url: 'git+https://github.com/webcomponents/webcomponentsjs.git' },
+78 silly install resolved     author: { name: 'The Polymer Authors' },
+78 silly install resolved     license: 'BSD-3-Clause',
+78 silly install resolved     bugs: { url: 'https://github.com/webcomponents/webcomponentsjs/issues' },
+78 silly install resolved     scripts: { test: 'wct' },
+78 silly install resolved     homepage: 'http://webcomponents.org',
+78 silly install resolved     devDependencies:
+78 silly install resolved      { gulp: '^3.8.8',
+78 silly install resolved        'gulp-audit': '^1.0.0',
+78 silly install resolved        'gulp-concat': '^2.4.1',
+78 silly install resolved        'gulp-header': '^1.1.1',
+78 silly install resolved        'gulp-uglify': '^1.0.1',
+78 silly install resolved        'run-sequence': '^1.0.1',
+78 silly install resolved        'web-component-tester': '^4.0.1' },
+78 silly install resolved     gitHead: 'b76bfaa6b1b2d691745b8d38b3f242e8f17490d5',
+78 silly install resolved     readme: 'webcomponents.js\n================\n\n[![Join the chat at https://gitter.im/webcomponents/webcomponentsjs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/webcomponents/webcomponentsjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n\nA suite of polyfills supporting the [Web Components](http://webcomponents.org) specs:\n\n**Custom Elements**: allows authors to define their own custom tags ([spec](https://w3c.github.io/webcomponents/spec/custom/)).\n\n**HTML Imports**: a way to include and reuse HTML documents via other HTML documents ([spec](https://w3c.github.io/webcomponents/spec/imports/)).\n\n**Shadow DOM**: provides encapsulation by hiding DOM subtrees under shadow roots ([spec](https://w3c.github.io/webcomponents/spec/shadow/)).\n\nThis also folds in polyfills for `MutationObserver` and `WeakMap`.\n\n\n## Releases\n\nPre-built (concatenated & minified) versions of the polyfills are maintained in the [tagged versions](https://github.com/webcomponents/webcomponentsjs/releases) of this repo. There are two variants:\n\n`webcomponents.js` includes all of the polyfills.\n\n`webcomponents-lite.js` includes all polyfills except for shadow DOM.\n\n\n## Browser Support\n\nOur polyfills are intended to work in the latest versions of evergreen browsers. See below\nfor our complete browser support matrix:\n\n| Polyfill   | IE10 | IE11+ | Chrome* | Firefox* | Safari 7+* | Chrome Android* | Mobile Safari* |\n| ---------- |:----:|:-----:|:-------:|:--------:|:----------:|:---------------:|:--------------:|\n| Custom Elements | ~ | ✓ | ✓ | ✓ | ✓ | ✓| ✓ |\n| HTML Imports | ~ | ✓ | ✓ | ✓ | ✓| ✓| ✓ |\n| Shadow DOM | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |\n| Templates | ✓ | ✓ | ✓ | ✓| ✓ | ✓ | ✓ |\n\n\n*Indicates the current version of the browser\n\n~Indicates support may be flaky. If using Custom Elements or HTML Imports with Shadow DOM,\nyou will get the non-flaky Mutation Observer polyfill that Shadow DOM includes.\n\nThe polyfills may work in older browsers, however require additional polyfills (such as classList)\nto be used. We cannot guarantee support for browsers outside of our compatibility matrix.\n\n\n### Manually Building\n\nIf you wish to build the polyfills yourself, you\'ll need `node` and `gulp` on your system:\n\n * install [node.js](http://nodejs.org/) using the instructions on their website\n * use `npm` to install [gulp.js](http://gulpjs.com/): `npm install -g gulp`\n\nNow you are ready to build the polyfills with:\n\n    # install dependencies\n    npm install\n    # build\n    gulp build\n\nThe builds will be placed into the `dist/` directory.\n\n## Contribute\n\nSee the [contributing guide](CONTRIBUTING.md)\n\n## License\n\nEverything in this repository is BSD style license unless otherwise specified.\n\nCopyright (c) 2015 The Polymer Authors. All rights reserved.\n\n## Helper utilities\n\n### `WebComponentsReady`\n\nUnder native HTML Imports, `<script>` tags in the main document block the loading of such imports. This is to ensure the imports have loaded and any registered elements in them have been upgraded. \n\nThe webcomponents.js and webcomponents-lite.js polyfills parse element definitions and handle their upgrade asynchronously. If prematurely fetching the element from the DOM before it has an opportunity to upgrade, you\'ll be working with an `HTMLUnknownElement`. \n\nFor these situations (or when you need an approximate replacement for the Polymer 0.5 `polymer-ready` behavior), you can use the `WebComponentsReady` event as a signal before interacting with the element. The criteria for this event to fire is all Custom Elements with definitions registered by the time HTML Imports available at load time have loaded have upgraded.\n\n```js\nwindow.addEventListener(\'WebComponentsReady\', function(e) {\n  // imports are loaded and elements have been registered\n  console.log(\'Components are ready\');\n});\n```\n\n## Known Issues\n\n  * [Limited CSS encapsulation](#encapsulation)\n  * [Element wrapping / unwrapping limitations](#wrapping)\n  * [Custom element\'s constructor property is unreliable](#constructor)\n  * [Contenteditable elements do not trigger MutationObserver](#contentedit)\n  * [ShadowCSS: :host-context(...):host(...) doesn\'t work](#hostcontext)\n  * [ShadowCSS: :host(.zot:not(.bar:nth-child(2))) doesn\'t work](#nestedparens)\n  * [HTML imports: document.currentScript doesn\'t work as expected](#currentscript)\n  * [execCommand isn\'t supported under Shadow DOM](#execcommand)\n\n### Limited CSS encapsulation <a id="encapsulation"></a>\nUnder native Shadow DOM, CSS selectors cannot cross the shadow boundary. This means document level styles don\'t apply to shadow roots, and styles defined within a shadow root don\'t apply outside of that shadow root. [Several selectors](http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-201/) are provided to be able to deal with the shadow boundary.\n\nThe Shadow DOM polyfill can\'t prevent document styles from leaking into shadow roots. It can, however, encapsulate styles within shadow roots to some extent. This behavior isn\'t automatically emulated by the Shadow DOM polyfill, but it can be achieved by manually using the included ShadowCSS shim:\n\n```\nWebComponents.ShadowCSS.shimStyling( shadowRoot, scope );\n```\n\n... where `shadowRoot` is the shadow root of a DOM element, and `scope` is the name of the scope used to prefix the selectors. This removes all `<style>` elements from the shadow root, rewrites it rules using the given scope and reinserts the style as a document level stylesheet. Note that the `:host` and `:host-context` pseudo classes are also rewritten.\n\nFor a full explanation on the implementation and both the possibilities and the limitations of ShadowCSS please view the documentation in the [ShadowCSS source](src/ShadowCSS/ShadowCSS.js).\n\n### Element wrapping / unwrapping limitations <a id="wrapping"></a>\nThe Shadow DOM polyfill is implemented by [wrapping](http://webcomponents.org/polyfills/shadow-dom/#wrappers) DOM elements whenever possible. It does this by wrapping methods like `document.querySelector` to return wrapped DOM elements. This has a few caveats:\n   * Not _everything_ can be wrapped. For example, elements like `document`, `window`, `document.body`, `document.fullscreenElement` and others are non-configurable and thus cannot be overridden.\n   * Wrappers don\'t support [live NodeLists](https://developer.mozilla.org/en-US/docs/Web/API/NodeList#A_sometimes-live_collection) like `HTMLElement.childNodes` and `HTMLFormElement.elements`. All NodeLists are snapshotted upon read. See [#217](https://github.com/webcomponents/webcomponentsjs/issues/217) for an explanation.\n\nIn order to work around these limitations the polyfill provides the `ShadowDOMPolyfill.wrap` and `ShadowDOMPolyfill.unwrap` methods to respectively wrap and unwrap DOM elements manually.\n\n### Custom element\'s constructor property is unreliable <a id="constructor"></a>\nSee [#215](https://github.com/webcomponents/webcomponentsjs/issues/215) for background.\n\nIn Safari and IE, instances of Custom Elements have a `constructor` property of `HTMLUnknownElementConstructor` and `HTMLUnknownElement`, respectively. It\'s unsafe to rely on this property for checking element types.\n\nIt\'s worth noting that `customElement.__proto__.__proto__.constructor` is `HTMLElementPrototype` and that the prototype chain isn\'t modified by the polyfills(onto `ElementPrototype`, etc.)\n\n### Contenteditable elements do not trigger MutationObserver <a id="contentedit"></a>\nUsing the MutationObserver polyfill, it isn\'t possible to monitor mutations of an element marked `contenteditable`.\nSee [the mailing list](https://groups.google.com/forum/#!msg/polymer-dev/LHdtRVXXVsA/v1sGoiTYWUkJ)\n\n### ShadowCSS: :host-context(...):host(...) doesn\'t work <a id="hostcontext"></a>\nSee [#16](https://github.com/webcomponents/webcomponentsjs/issues/16) for background.\n\nUnder the shadow DOM polyfill, rules like:\n```\n:host-context(.foo):host(.bar) {...}\n```\ndon\'t work, despite working under native Shadow DOM. The solution is to use `polyfill-next-selector` like:\n\n```\npolyfill-next-selector { content: \'.foo :host.bar, :host.foo.bar\'; }\n```\n\n### ShadowCSS: :host(.zot:not(.bar:nth-child(2))) doesn\'t work <a id="nestedparens"></a>\nShadowCSS `:host()` rules can only have (at most) 1-level of nested parentheses in its argument selector under ShadowCSS. For example, `:host(.zot)` and `:host(.zot:not(.bar))` both work, but `:host(.zot:not(.bar:nth-child(2)))` does not. \n\n### HTML imports: document.currentScript doesn\'t work as expected <a id="currentscript"></a>\nIn native HTML Imports, document.currentScript.ownerDocument references the import document itself. In the polyfill use document._currentScript.ownerDocument (note the underscore).\n\n### execCommand and contenteditable isn\'t supported under Shadow DOM <a id="execcommand"></a>\nSee [#212](https://github.com/webcomponents/webcomponentsjs/issues/212)\n\n`execCommand`, and `contenteditable` aren\'t supported under the ShadowDOM polyfill, with commands that insert or remove nodes being especially prone to failure.\n',
+78 silly install resolved     readmeFilename: 'README.md',
+78 silly install resolved     _id: 'webcomponents.js@0.7.21',
+78 silly install resolved     _shasum: '8abb77e60217e8b1c983889bd7fab6a351ebab06',
+78 silly install resolved     _from: 'polymer/webcomponentsjs',
+78 silly install resolved     _resolved: 'git://github.com/polymer/webcomponentsjs.git#b76bfaa6b1b2d691745b8d38b3f242e8f17490d5' } ]
+79 info install bower@1.7.7 into /usr/local/lib
+80 info install webcomponents.js@0.7.21 into /usr/local/lib
+81 info installOne bower@1.7.7
+82 verbose installOne of bower to /usr/local/lib not in flight; installing
+83 info installOne webcomponents.js@0.7.21
+84 verbose installOne of webcomponents.js to /usr/local/lib not in flight; installing
+85 verbose lock using /Users/Tim_Felbinger/.npm/_locks/bower-e8debc5417026b57.lock for /usr/local/lib/node_modules/bower
+86 verbose lock using /Users/Tim_Felbinger/.npm/_locks/webcomponents-js-9a3d80b626c75012.lock for /usr/local/lib/node_modules/webcomponents.js
+87 silly install write writing webcomponents.js 0.7.21 to /usr/local/lib/node_modules/webcomponents.js
+88 silly install write writing bower 1.7.7 to /usr/local/lib/node_modules/bower
+89 verbose unbuild lib/node_modules/webcomponents.js
+90 verbose unbuild lib/node_modules/bower
+91 silly gentlyRm /usr/local/lib/node_modules/webcomponents.js is being purged from base /usr/local
+92 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/webcomponents.js
+93 verbose tar unpack /Users/Tim_Felbinger/.npm/webcomponents.js/0.7.21/package.tgz
+94 verbose tar unpacking to /usr/local/lib/node_modules/webcomponents.js
+95 silly gentlyRm /usr/local/lib/node_modules/webcomponents.js is being purged
+96 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/webcomponents.js
+97 silly gunzTarPerm modes [ '755', '644' ]
+98 error tar.unpack untar error /Users/Tim_Felbinger/.npm/webcomponents.js/0.7.21/package.tgz
+99 verbose unlock done using /Users/Tim_Felbinger/.npm/_locks/webcomponents-js-9a3d80b626c75012.lock for /usr/local/lib/node_modules/webcomponents.js
+100 info preuninstall bower@1.7.2
+101 info uninstall bower@1.7.2
+102 verbose unbuild rmStuff bower@1.7.2 from /usr/local/lib/node_modules
+103 silly gentlyRm /usr/local/bin/bower is being gently removed
+104 silly gentlyRm verifying /usr/local is an npm working directory
+105 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+106 silly gentlyRm deletion target /usr/local/bin/bower is under /usr/local
+107 verbose gentlyRm vacuuming from /usr/local/bin/bower up to /usr/local
+108 silly vacuum-fs removing /usr/local/bin/bower
+109 silly vacuum-fs quitting because other entries in /usr/local/bin
+110 info postuninstall bower@1.7.2
+111 silly gentlyRm /usr/local/lib/node_modules/bower is being purged from base /usr/local
+112 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/bower
+113 silly vacuum-fs purging /usr/local/lib/node_modules/bower
+114 verbose unlock done using /Users/Tim_Felbinger/.npm/_locks/bower-e8debc5417026b57.lock for /usr/local/lib/node_modules/bower
+115 verbose fstream_path /usr/local/lib/node_modules/webcomponents.js
+116 verbose fstream_type Directory
+117 verbose fstream_class DirWriter
+118 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/webcomponents.js'
+118 verbose stack     at Error (native)
+119 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+119 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+119 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+120 verbose cwd /Users/Tim_Felbinger/GitHub/minimalism-app
+121 error Darwin 15.3.0
+122 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "bower" "Polymer/webcomponentsjs"
+123 error node v4.2.4
+124 error npm  v2.14.12
+125 error path /usr/local/lib/node_modules/webcomponents.js
+126 error code EACCES
+127 error errno -13
+128 error syscall mkdir
+129 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/webcomponents.js'
+129 error     at Error (native)
+129 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/webcomponents.js']
+129 error   errno: -13,
+129 error   code: 'EACCES',
+129 error   syscall: 'mkdir',
+129 error   path: '/usr/local/lib/node_modules/webcomponents.js',
+129 error   fstream_type: 'Directory',
+129 error   fstream_path: '/usr/local/lib/node_modules/webcomponents.js',
+129 error   fstream_class: 'DirWriter',
+129 error   fstream_stack:
+129 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+129 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+129 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+130 error Please try running this command again as root/Administrator.
+131 verbose exit [ -13, true ]
+132 verbose unbuild lib/node_modules/webcomponents.js
+133 silly gentlyRm /usr/local/lib/node_modules/webcomponents.js is being purged from base /usr/local
+134 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/webcomponents.js
+135 verbose unbuild lib/node_modules/bower
+136 info preuninstall bower@1.7.2
+137 info uninstall bower@1.7.2
+138 verbose unbuild rmStuff bower@1.7.2 from /usr/local/lib/node_modules
+139 silly gentlyRm /usr/local/bin/bower is being gently removed
+140 silly gentlyRm verifying /usr/local is an npm working directory
+141 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+142 silly gentlyRm deletion target /usr/local/bin/bower is under /usr/local
+143 verbose gentlyRm vacuuming from /usr/local/bin/bower up to /usr/local
+144 info postuninstall bower@1.7.2
+145 silly gentlyRm /usr/local/lib/node_modules/bower is being purged from base /usr/local
+146 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/bower
+147 silly vacuum-fs purging /usr/local/lib/node_modules/bower
+148 error error rolling back Error: EACCES: permission denied, rmdir '/usr/local/lib/node_modules/bower'
+148 error error rolling back     at Error (native)
+148 error error rolling back  { [Error: EACCES: permission denied, rmdir '/usr/local/lib/node_modules/bower']
+148 error error rolling back   errno: -13,
+148 error error rolling back   code: 'EACCES',
+148 error error rolling back   syscall: 'rmdir',
+148 error error rolling back   path: '/usr/local/lib/node_modules/bower' }
