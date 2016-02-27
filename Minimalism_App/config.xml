@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.timfelbinger.minimalism_app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Minimalism_App</name>
+<widget id="com.timfelbinger.minimalism_app2" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Minimalism_App2</name>
     <description>
         Hello World sample application that responds to the deviceready event.
     </description>
@@ -66,14 +66,6 @@
     <gap:splash gap:platform="ios" height="1024" src="www/res/screen/ios/screen-ipad-portrait.png" width="768" />
     <gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/screen-portrait.jpg" />
-    
-    
-    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="<2.5>">
-        <param name="APP_ID" value="<YOUR_APP_ID>" />
-        <param name="APP_NAME" value="<YOUR_APP_NAME>" />
-    </gap:plugin>
-    
-    
     <access origin="*" />
     <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
