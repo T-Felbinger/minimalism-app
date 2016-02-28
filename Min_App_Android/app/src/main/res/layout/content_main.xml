@@ -32,6 +32,13 @@
                 android:layout_height="200dp"
                 android:scaleType="fitCenter"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Items:"
+                android:id="@+id/textView6" />
+
             <EditText
 
                 android:layout_width="match_parent"
@@ -39,10 +46,17 @@
                 android:text="Click the image button in the bottom right..."
                 android:id="@+id/image_details" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Category:"
+                android:id="@+id/textView7" />
+
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spinner"
+                android:id="@+id/main_category"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
@@ -53,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:text="Submit"
                 android:id="@+id/button"
-                android:onClick="   "/>
+                android:onClick="submit"/>
 
         </LinearLayout>
     </ScrollView>

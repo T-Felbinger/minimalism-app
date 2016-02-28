@@ -15,6 +15,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.view.menu.MenuView;
 import android.support.v7.widget.Toolbar;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -69,6 +70,9 @@ public class Input extends AppCompatActivity {
 
     private EditText mImageDetails;
     private ImageView mMainImage;
+    private Spinner mCategory;
+
+    private Bitmap imgStore;
 
 
 
@@ -106,9 +110,10 @@ public class Input extends AppCompatActivity {
 
         mImageDetails = (EditText) findViewById(R.id.image_details);
         mMainImage = (ImageView) findViewById(R.id.main_image);
+        mCategory = (Spinner) findViewById(R.id.main_category);
 
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        Spinner spinner = (Spinner) findViewById(R.id.main_category);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.categories_array, android.R.layout.simple_spinner_item);
@@ -188,6 +193,8 @@ public class Input extends AppCompatActivity {
             try {
                 // scale the image to 800px to save on bandwidth
                 Bitmap bitmap = scaleBitmapDown(MediaStore.Images.Media.getBitmap(getContentResolver(), uri), 1200);
+
+                imgStore = bitmap;
 
                 callCloudVision(bitmap);
                 mMainImage.setImageBitmap(bitmap);
@@ -308,15 +315,26 @@ public class Input extends AppCompatActivity {
         return message;
     }
 
-    public void submit() {
-        String URL = "postfeed.azurewebsites.net/index.aspx";
+    public void submit(View view) {
 
-        String img = findViewById("d");
+
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        imgStore.compress(Bitmap.CompressFormat.JPEG, 100, baos); //bm is the bitmap object
+        byte[] b = baos.toByteArray();
+        String img = Base64.encodeToString(b, Base64.DEFAULT);
+
+        String desc = mImageDetails.getText().toString();
+
+        String cat = mCategory.getSelectedItem().toString();
+
+        String URL = "postfeed.azurewebsites.net/index.aspx?cat=" + cat + "&desc=" + desc + "&img=" + img;
+
 
         HttpClient httpclient = new DefaultHttpClient();
-        HttpPost httppost = new HttpPost("http://www.yoursite.com/script.php");
+        HttpPost httppost = new HttpPost("URL");
 
-        try {
+
+       /* try {
             // Add your data
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
             nameValuePairs.add(new BasicNameValuePair("img", img));
@@ -330,7 +348,7 @@ public class Input extends AppCompatActivity {
             // TODO Auto-generated catch block
         } catch (IOException e) {
             // TODO Auto-generated catch block
-        }
+        }*/
 }
 
 }
