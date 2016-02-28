@@ -10,5 +10,9 @@
     <string name="dialog_select_gallery">Gallery</string>
 
     <string name="image_picker_error">Something is wrong with that image. Pick a different one please.</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 </resources>
