@@ -85,6 +85,8 @@ public class Input extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -327,7 +329,7 @@ public class Input extends AppCompatActivity {
 
         String cat = mCategory.getSelectedItem().toString();
 
-        String URL = "postfeed.azurewebsites.net/index.aspx?cat=" + cat + "&desc=" + desc + "&img=" + img;
+        String URL = "postapi.azurewebsites.net/values?cat=" + cat + "&desc=" + desc + "&img=" + img;
 
 
         HttpClient httpclient = new DefaultHttpClient();
