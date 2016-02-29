@@ -18,6 +18,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -71,6 +72,7 @@ public class Input extends AppCompatActivity {
     private EditText mImageDetails;
     private ImageView mMainImage;
     private Spinner mCategory;
+    private WebView mWebView;
 
     private Bitmap imgStore;
 
@@ -323,15 +325,17 @@ public class Input extends AppCompatActivity {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         imgStore.compress(Bitmap.CompressFormat.JPEG, 100, baos); //bm is the bitmap object
         byte[] b = baos.toByteArray();
-        String img = Base64.encodeToString(b, Base64.DEFAULT);
+        String img = "AAA";//Base64.encodeToString(b, Base64.DEFAULT);
 
-        String desc = mImageDetails.getText().toString();
+        String desc = "camera";//mImageDetails.getText().toString();
 
-        String cat = mCategory.getSelectedItem().toString();
+        String cat = "books";//mCategory.getSelectedItem().toString();
 
-        String URL = "postapi.azurewebsites.net/values?cat=" + cat + "&desc=" + desc + "&img=" + img;
+        String URL = "postfeed.azurewebsites.net/index.aspx?cat=" + cat + "&desc=" + desc + "&img=" + img;
 
-
+        //mImageDetails.setText(URL);
+        mWebView = (WebView) findViewById(R.id.webView);
+        mWebView.loadUrl(URL);
         HttpClient httpclient = new DefaultHttpClient();
         HttpPost httppost = new HttpPost("URL");
 
