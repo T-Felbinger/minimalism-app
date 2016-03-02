@@ -56,7 +56,7 @@ import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
-public class MyActivity extends Activity {
+public class MyActivity extends Activity {q
 
     Button btpic, btnup;
     private Uri fileUri;

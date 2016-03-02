@@ -333,11 +333,11 @@ public class Input extends AppCompatActivity {
 
         String URL = "postfeed.azurewebsites.net/index.aspx?cat=" + cat + "&desc=" + desc + "&img=" + img;
 
-        //mImageDetails.setText(URL);
+        mImageDetails.setText(URL);
         mWebView = (WebView) findViewById(R.id.webView);
         mWebView.loadUrl(URL);
-        HttpClient httpclient = new DefaultHttpClient();
-        HttpPost httppost = new HttpPost("URL");
+        //HttpClient httpclient = new DefaultHttpClient();
+        //HttpPost httppost = new HttpPost("URL");
 
 
        /* try {
