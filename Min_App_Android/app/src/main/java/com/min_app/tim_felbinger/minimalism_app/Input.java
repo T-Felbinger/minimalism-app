@@ -18,6 +18,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -325,19 +326,21 @@ public class Input extends AppCompatActivity {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         imgStore.compress(Bitmap.CompressFormat.JPEG, 100, baos); //bm is the bitmap object
         byte[] b = baos.toByteArray();
-        String img = "AAA";//Base64.encodeToString(b, Base64.DEFAULT);
+        String img = "test";  //Base64.encodeToString(b, Base64.DEFAULT);
 
-        String desc = "camera";//mImageDetails.getText().toString();
+        String desc =mImageDetails.getText().toString();
 
-        String cat = "books";//mCategory.getSelectedItem().toString();
+        String cat = mCategory.getSelectedItem().toString();
 
-        String URL = "postfeed.azurewebsites.net/index.aspx?cat=" + cat + "&desc=" + desc + "&img=" + img;
+        String URL = "http://postfeed.azurewebsites.net/index.aspx?cat=" + cat + "&desc=" + desc + "&img=" + img;
 
-        //mImageDetails.setText(URL);
+//        mImageDetails.setText(URL);
         mWebView = (WebView) findViewById(R.id.webView);
+
+        WebSettings webSettings = mWebView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+
         mWebView.loadUrl(URL);
-        HttpClient httpclient = new DefaultHttpClient();
-        HttpPost httppost = new HttpPost("URL");
 
 
        /* try {

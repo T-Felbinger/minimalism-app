@@ -24,7 +24,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:weightSum="1">
 
             <ImageView
                 android:id="@+id/main_image"
@@ -64,9 +65,10 @@
 
             <WebView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="500px"
                 android:id="@+id/webView"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.63" />
 
             <Button
                 android:layout_width="wrap_content"
