@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="WebApp-Web.config Connection String" description="WebApp Connection String used in web.config by the application to access the database." defaultValue="server=minimalism.database.windows.net;Database=minimalism;User Id=MinimalismAdmin; Password=Dabears789;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="c:\\users\\josha\\onedrive\\documents\\visual\ studio\ 2015\\Projects\\PostFeed\\PostFeed\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='WebApp']/@connectionString" />
+  </parameter>
+</parameters>
