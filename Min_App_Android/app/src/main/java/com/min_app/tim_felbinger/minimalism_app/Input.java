@@ -334,22 +334,22 @@ public class Input extends AppCompatActivity {
 
         String URL = "http://postfeed.azurewebsites.net/index.aspx?cat=" + cat + "&desc=" + desc + "&img=" + img;
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
 //        mImageDetails.setText(URL);
-=======
+//=======
         mImageDetails.setText(URL);
->>>>>>> origin/master
+//>>>>>>> origin/master
         mWebView = (WebView) findViewById(R.id.webView);
 
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
         mWebView.loadUrl(URL);
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
         //HttpClient httpclient = new DefaultHttpClient();
         //HttpPost httppost = new HttpPost("URL");
->>>>>>> origin/master
+//>>>>>>> origin/master
 
 
        /* try {
