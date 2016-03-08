@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'hugo'
 
 android {
     compileSdkVersion 23
@@ -33,4 +34,15 @@ dependencies {
 
     compile 'org.apache.httpcomponents:httpcore:4.4.1'
     compile 'org.apache.httpcomponents:httpclient:4.5'
+
+    //new stuff for inst design...
+
+    compile 'com.android.support:support-v13:21.+'
+    compile 'com.android.support:support-v4:21.+'
+    compile 'com.android.support:palette-v7:+'
+    compile 'com.android.support:recyclerview-v7:+'
+    compile 'com.android.support:cardview-v7:21.0.+'
+    compile 'com.jakewharton:butterknife:5.1.2'
+    compile 'com.jakewharton.timber:timber:2.5.0'
+    compile 'com.facebook.rebound:rebound:0.3.6'
 }
