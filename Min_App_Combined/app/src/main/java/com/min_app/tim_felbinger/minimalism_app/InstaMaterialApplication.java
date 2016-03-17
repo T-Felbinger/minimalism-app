@@ -1,0 +1,16 @@
+package com.min_app.tim_felbinger.minimalism_app;
+
+import android.app.Application;
+
+import timber.log.Timber;
+
+/**
+ * Created by froger_mcs on 05.11.14.
+ */
+public class InstaMaterialApplication extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        Timber.plant(new Timber.DebugTree());
+    }
+}

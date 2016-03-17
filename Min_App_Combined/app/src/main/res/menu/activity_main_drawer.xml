@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<menu xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <!--<group android:checkableBehavior="single">-->
+        <!--&lt;!&ndash;<item&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/nav_more"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:icon="@drawable/ic_menu_info_details"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:title="Read"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<item&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/nav_new"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:icon="@drawable/ic_menu_add"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:title="Create New" />&ndash;&gt;-->
+        <!--&lt;!&ndash;<item&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/nav_log"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:icon="@drawable/ic_menu_recent_history"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:title="Log"/>&ndash;&gt;-->
+        <!--<item-->
+            <!--android:id="@+id/nav_social"-->
+            <!--android:icon="@drawable/ic_menu_share"-->
+            <!--android:title="Social" />-->
+    <!--</group>-->
+<!--</menu>-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:id="@+id/menu_group_1">
+    <item
+        android:id="@+id/nav_log"
+        android:icon="@drawable/ic_global_menu_feed"
+        android:title="My Feed" />
+    <item
+        android:id="@+id/nav_new"
+        android:icon="@drawable/ic_global_menu_direct"
+        android:title="Create New" />
+    <item
+        android:id="@+id/nav_social"
+        android:icon="@drawable/ic_menu_share"
+        android:title="Social" />
+</group>
+<group android:id="@+id/menu_group_2">
+    <item
+        android:id="@+id/menu_settings"
+        android:title="Settings" />
+    <item
+        android:id="@+id/nav_more"
+        android:title="About" />
+</group>
+</menu>

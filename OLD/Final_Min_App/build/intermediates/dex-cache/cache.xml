@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Tim_Felbinger/GitHub/minimalism-app/Final_Min_App/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/Users/Tim_Felbinger/GitHub/minimalism-app/Final_Min_App/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.1.1_a8e51a6b167499467b2f8dc1a8e2570e73476b79.jar" />
+    </item>
+    <item
+        jar="/Users/Tim_Felbinger/GitHub/minimalism-app/Final_Min_App/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/Tim_Felbinger/GitHub/minimalism-app/Final_Min_App/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_6a2d09019dfb13c6e2709097c4ef93a0561b95f7.jar" />
+    </item>
+    <item
+        jar="/Users/Tim_Felbinger/GitHub/minimalism-app/Final_Min_App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/Tim_Felbinger/GitHub/minimalism-app/Final_Min_App/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_da058f38379307c34c9f052c5489636b7aa462c5.jar" />
+    </item>
+    <item
+        jar="/Users/Tim_Felbinger/GitHub/minimalism-app/Final_Min_App/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/Users/Tim_Felbinger/GitHub/minimalism-app/Final_Min_App/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.1.1_92d38e525175993370361b406f3624d14053041c.jar" />
+    </item>
+    <item
+        jar="/Users/Tim_Felbinger/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/Tim_Felbinger/GitHub/minimalism-app/Final_Min_App/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_c8fe8f0a9c22dd24d8f0d3a9c7762f10006d2034.jar" />
+    </item>
+    <item
+        jar="/Users/Tim_Felbinger/GitHub/minimalism-app/Final_Min_App/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/Tim_Felbinger/GitHub/minimalism-app/Final_Min_App/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_261a2a9fa3597740c8b14fb032e4262fcbcc1302.jar" />
+    </item>
+
+</items>
